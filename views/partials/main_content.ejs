@@ -78,7 +78,49 @@
 <!-----Projects-->
 
 <% if (title == "Projects"){ %>
-          
+
+  <section class="jumbotron text-center">
+    <div class="container">
+      <h1 class="jumbotron-heading">Current Projects</h1>
+      <p class="lead text-muted">Below are some of the important projects currently I'm working on and going to work in future.</p>
+    </div>
+  </section>
+
+  <div class="album py-5 bg-light">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card mb-4 box-shadow">
+            <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="/Assets/images/vr.jpg" data-holder-rendered="true">
+            <div class="card-body">
+              <p class="card-text" style="text-align: justify;">This project is all about creating a virtual world using Virtual Reality technology. This is project has a wide scope in Construction, Education and Gaming Industries. In particular right now we are working on building high definition Constructions. The outcome of this project is we can have a realistic view of a build in 3D even before in was constructed.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 box-shadow">
+            <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" src="/Assets/images/bike.jpg" data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+            <div class="card-body">
+              <p class="card-text" style="text-align: justify;">This project is a 2D bike race I’m working on. This is a mobile game completely developed in Unity game engine. Playing this game is lot of fun and an absolute stressbuster in the time of lockdown.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 box-shadow">
+            <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="/Assets/images/event.jpg" data-holder-rendered="true">
+            <div class="card-body">
+              <p class="card-text" style="text-align: justify;">This is new project still in the seed stage. In this project we are planning to encourage students to volunteer various social events and at the same we also request recruiters to have an interaction at the event place and hire the students on part-time/full-time basis. This will help international students a lot pitching their first international job offer.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
 <% } %>
 
 
@@ -86,6 +128,55 @@
 
 <% if (title == "Services"){ %>
         
+  <section class="jumbotron text-center">
+    <div class="container">
+      <h1 class="jumbotron-heading">Services</h1>
+      <p class="lead text-muted">I offer following services at a premium quality and repeat changes are also allowed.</p>
+    </div>
+  </section>
+
+
+  <div class='container-fluid mx-auto mt-5 mb-5 col-12' style="text-align: center">
+    
+     <div class="row" style="justify-content: center">
+         <div class="card col-md-5 col-12">
+             <div class="card-content">
+                 <div class="card-body">
+                   <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="Assets/images/game.jpg" data-holder-rendered="true">
+                   </br>
+                     <div class="shadow"></div>
+                     <div class="card-title">Game Design & Development</div>
+                     <div class="card-subtitle">
+                         <p> <small class="text-muted">Unity, Unreal, Gimp and Tiled</small> </p>
+                     </div>
+                 </div>
+             </div>
+         </div>
+
+
+         <div class="card col-md-5 col-12 ml-2">
+             <div class="card-content">
+                 <div class="card-body">
+                   <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="Assets/images/3D.jpg" data-holder-rendered="true">
+                 </br>  
+                   <div class="card-title">3D Modeling</div>
+                     <div class="card-subtitle">         
+                       <p> <small class="text-muted"> Blender, 3Ds Max, Maya, MudBox, SketchUp </small> </p>
+                     </div>
+                 </div>
+             </div>
+         </div>
+         
+     </div>
+ 
+
+    </div>
+
+    <div class="text-center">
+      <a href="/contact" class="btn btn-secondary btn-info active" role="button" aria-pressed="true">Get in touch</a>
+    </div>
+  </div>
+
 <% } %>
 
 
@@ -144,8 +235,26 @@
             <textarea id="form-text" class="form-control md-textarea" rows="3" placeholder="Message"></textarea>
           </div>
           <div class="text-center mt-4">
-            <button class="btn btn-dark">Submit</button>
+            <button onclick="myFunction()" class="btn btn-secondary btn-info active" role="button" aria-pressed="true">Submit</button>
           </div>
+
+          <p href="/home" id="demo"></p>
+          
+          <script>  //Script copied from W3 Schools. /https://www.w3schools.com/
+          function myFunction() {
+            var txt;
+            var Name = document.getElementById("form-name").value
+            if (confirm("Name: " + Name)) {
+              txt = "You pressed OK!";
+              //window.alert("Enquiry sent successfully.");
+              window.location.href = "/home";
+            } else {
+              txt = "Please fill the details again!";
+            }
+            document.getElementById("demo").innerHTML = txt;
+          }
+          </script>
+
         </div>
       </div>
     </div>
