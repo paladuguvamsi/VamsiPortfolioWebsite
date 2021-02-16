@@ -5,7 +5,7 @@
  */
 
 let app = require('./app');
-let debug = require('debug')('rahulkumar-portfolio:server');
+let debug = require('debug')('vamsi-portfolio-assignment:server');
 let http = require('http');
 
 /**
