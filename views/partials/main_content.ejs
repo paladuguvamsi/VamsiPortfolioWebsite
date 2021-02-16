@@ -1,0 +1,159 @@
+  <!-- Main Content -->
+  <main class="container">
+
+<!---Home-->
+ 
+<% if (title == "Home"){ %>
+<div class='container-fluid mx-auto mt-5 mb-5 col-12' style="text-align: center">
+              
+
+<style>
+  body {
+    background-image: url('/Assets/images/gamebg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+  }
+</style>
+
+<div class="p-5 mb-0 bg-link text-grey" style="width:600px; margin:0 auto;">
+<h1 style="font-size:60px;">Welcome to my Portfolio Website</h1>
+<p></p>
+<div class="hd text-black"><h5>
+    This is Vamsi Paladugu, currently studying Game Programming as Centennial College, Toronto. 
+    This website is published to showcase my Gaming Projects currently I'm working on and also the Services I can offer to you in Game Development.             
+</h5></div>
+<h2 style="font-size:30px;">"You envisage; We create."</h2>
+
+</div>
+<div class="text-center">
+<a href="/about" class="btn btn-secondary btn-info active" role="button" aria-pressed="true">More about me</a></div><br>
+<% } %>
+
+
+<!-----About-->
+
+<% if (title == "About"){ %>
+<div class='container-fluid mx-auto mt-5 mb-5 col-12' style="text-align: center">
+<div class="p-3 mb-2 bg-dark text-grey">
+<div class="hd"></div></div>
+<div id="carouselIndicators" class="carousel slide" data-ride="carousel">
+<div class="carousel-inner">
+<div class="carousel-item active">
+<img class="d-block w-100" src="/Assets/images/aboutbw.jpg" alt="First slide"></div></div></div></div>
+
+<div class="p-3 mb-2 bg-link text-grey">
+<div class="hd"><h5>
+  I am currently a student at Centennial College studying my graduate diploma in Game Programming. 
+  Previously I was working as a Software Developer with experience of developing and managing complex system applications.   
+</h5>
+<br>
+<h5>
+  I did my graduation in 2017 with specialization in Electronics and communications and in the campus placements I got my first job at CGI Inc. 
+  Later hunger for knowledge and determination to turn complex logics into working applications has contributed to my promotion as Software Developer at CGI Inc. 
+  I consider myself as a ‘forever student’, eager to build on academic foundations in Programming filed I took up my Game programming course at Centennial College.
+</h5>
+<br>
+<h5>
+  I believe being creative in the workplace is key to success in Gaming industry. 
+  I work hard to provide optimal solutions and look forward to be a part of big upcoming AAA games.
+</h5>
+</div></div>
+
+<div class="text-center">
+    <button type="button" class="btn btn-info" onclick=" window.open('https://drive.google.com/file/d/1cHqNpvxqQoWZytSvJoqgeO1MGe8tsIAF/view?usp=sharing','_blank')">
+        View My Resume
+    </button>
+</div>
+<br>
+  
+<div class="p-3 mb-2 bg-dark text-grey">
+<div class="hd"></div></div>   
+<div class="row" style="justify-content: center">
+
+<% } %>
+
+
+
+<!-----Projects-->
+
+<% if (title == "Projects"){ %>
+          
+<% } %>
+
+
+<!----Services-->
+
+<% if (title == "Services"){ %>
+        
+<% } %>
+
+
+ <!----Contacts-->     
+
+<% if (title == "Contact"){ %>
+
+<section class="section pb-5">
+
+  <h2 class="section-heading h1 pt-4">Contact Us</h2>
+
+  <div class="row">
+
+    <div class="col-sm-6">
+
+      <div class="row">
+        <div class="col-sm-6">
+          <a class="btn-floating blue accent-1"><i class="fas fa-map-marker-alt"></i></a>
+          <br><br>
+          <br>
+          <br>
+          <h3 style="font-size:30px;">Address:</h3>
+          <h3 style="font-size:20px;">Tirupati, Andhra Pradesh</h3>
+          <h3 style="font-size:20px;">India</h3>
+          <br>
+          <a class="btn-floating blue accent-1"><i class="fas fa-phone"></i></a>
+          <h3 style="font-size:20px;">+ 91 9951929455</h3>      
+          <br>
+          <a class="btn-floating blue accent-1"><i class="fas fa-envelope"></i></a>
+          <h3 style="font-size:20px;">paladuguvamsichowdary@gmail.com</h3>
+        </div>    
+      </div>
+    </div>
+
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <div class="form-header accent-1">
+            <h3><i class="fas fa-envelope"></i> Enquiry:</h3>
+          </div>
+          <br>
+          <div class="md-form">
+            <i class="fas fa-user prefix grey-text"></i>
+            <input type="text" id="form-name" class="form-control" placeholder="Full Name">
+          </div>
+          <div class="md-form">
+            <i class="fas fa-envelope prefix grey-text"></i>
+            <input type="email" id="form-email" class="form-control" placeholder="Email"> 
+          </div>
+          <div class="md-form">
+            <i class="fas fa-tag prefix grey-text"></i>
+            <input type="text" id="form-Subject" class="form-control" placeholder="Subject"> 
+          </div>
+          <div class="md-form">
+            <i class="fas fa-pencil-alt prefix grey-text"></i>
+            <textarea id="form-text" class="form-control md-textarea" rows="3" placeholder="Message"></textarea>
+          </div>
+          <div class="text-center mt-4">
+            <button class="btn btn-dark">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<% } %>
+  </main>
+  
